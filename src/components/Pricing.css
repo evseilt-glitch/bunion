@@ -1,0 +1,103 @@
+.pricing {
+  background-color: var(--color-bg);
+}
+
+.pricing-box {
+  background-color: var(--color-white);
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--color-accent);
+}
+
+.urgency-text {
+  color: #ef4444;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pricing-headline {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.price-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.original-price {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.sale-price {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.savings-badge {
+  display: inline-block;
+  background-color: #fef3c7; /* light yellow */
+  color: #d97706; /* dark yellow/orange */
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 2.5rem;
+  font-size: 1.125rem;
+}
+
+.pricing-cta {
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+}
+
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+}
+
+.badge {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-headline {
+    font-size: 2rem;
+  }
+  .sale-price {
+    font-size: 3rem;
+  }
+  .pricing-cta {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+  }
+  .trust-badges {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+}

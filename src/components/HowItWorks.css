@@ -1,0 +1,58 @@
+.how-it-works {
+  background-color: var(--color-white);
+}
+
+.how-title {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.steps-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.step-card {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: -4rem auto 1.5rem;
+  border: 6px solid var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.step-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-desc {
+  font-size: 1.125rem;
+  color: var(--color-text-body);
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+}
